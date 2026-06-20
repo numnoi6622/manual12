@@ -381,6 +381,44 @@ h1, h2, h3 {
     z-index: 2;
 }
 
+.tct-badge {
+    margin-top: 0.8rem;
+    padding: 0.4rem 0.6rem;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    border: 1px solid #bae6fd;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+.tct-logo {
+    font-weight: 700;
+    color: #0369a1;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.tct-price {
+    color: #be123c;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.tct-footer-badge {
+    display: inline-block;
+    background: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    border: 2px solid #bae6fd;
+    font-weight: bold;
+    color: #0369a1;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
 .card-img-wrapper img {
     width: 100%;
     height: 100%;
