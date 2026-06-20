@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เปรมนมสด - จุดแฮงก์เอาต์สุดชิคยามค่ำคืน</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Kanit', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            300: '#93c5fd',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            900: '#1e3a8a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .blob-bg {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23DBEAFE' d='M44.7,-76.4C58.3,-69.2,70,-56.3,79.5,-42.1C89,-27.9,96.3,-12.3,95.3,2.9C94.2,18,84.9,32.7,73.8,45C62.7,57.3,49.8,67.3,35.4,74.5C21.1,81.8,5.4,86.4,-9.9,86C-25.2,85.6,-40.1,80.1,-52.8,70.8C-65.4,61.5,-75.7,48.3,-82.5,33.5C-89.3,18.7,-92.5,2.4,-89.1,-12.6C-85.6,-27.7,-75.5,-41.4,-63,-51.7C-50.6,-61.9,-35.8,-68.8,-21.4,-73.2C-7,-77.7,6.9,-79.8,21.3,-78.9C35.7,-78,44.7,-76.4,44.7,-76.4Z' transform='translate(100 100)' /%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .hero-overlay {
+            background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 0.3) 100%);
+        }
+        /* Bounce animation for CTA */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased overflow-x-hidden">
+
+    <!-- 1. Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-20 pb-12 overflow-hidden">
+        <!-- Hero Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="C:/Users/Administrator/.gemini/antigravity/brain/cc2247db-0913-4615-9a2f-b4e53382ce3e/prem_hero_bg_1781936769809.png" alt="บรรยากาศร้านเปรมนมสด" class="w-full h-full object-cover object-center" />
+            <div class="absolute inset-0 hero-overlay md:bg-gradient-to-r md:from-white md:via-white/80 md:to-transparent"></div>
+        </div>
+
+        <div class="container mx-auto px-4 md:px-8 relative z-10 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
+                <!-- Logo -->
+                <div class="w-40 h-40 md:w-48 md:h-48 rounded-full bg-white shadow-xl flex items-center justify-center p-2 mb-8 transform -rotate-3 hover:rotate-0 transition duration-300">
+                    <img src="C:/Users/Administrator/.gemini/antigravity/brain/cc2247db-0913-4615-9a2f-b4e53382ce3e/prem_logo_1781936754378.png" alt="โลโก้เปรมนมสด" class="w-full h-full object-cover rounded-full" />
+                </div>
+
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4 text-slate-900">
+                    เปรมนมสด
+                    <br/>
+                    <span class="text-brand-500">จุดแฮงก์เอาต์สุดชิคยามค่ำคืน</span>
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-slate-600 mb-10">ฟินกับนมสดและของหวาน! นั่งชิลกับแก๊งเพื่อนได้ยาวๆ บรรยากาศโดนใจ ถ่ายรูปสวยทุกมุม 📸</p>
+                
+                <!-- Primary CTA -->
+                <a href="#delivery" class="inline-block animate-float bg-brand-500 hover:bg-brand-600 text-white text-xl font-bold py-4 px-10 rounded-full shadow-lg shadow-brand-500/50 transition-all transform hover:scale-105 active:scale-95">
+                    🚀 สั่งเดลิเวอรี่เลย
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Atmosphere & Photo Spots -->
+    <section class="py-20 bg-white relative">
+        <div class="absolute top-0 right-0 w-64 h-64 blob-bg opacity-40 transform translate-x-1/2 -translate-y-1/2"></div>
+        
+        <div class="container mx-auto px-4 md:px-8 relative z-10">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-5xl font-bold text-slate-900 mb-4">บรรยากาศโดนใจ <span class="text-brand-500">มุมถ่ายรูปเพียบ!</span></h2>
+                <p class="text-lg text-slate-500 max-w-2xl mx-auto">นัดเพื่อนมาเม้ามอยยามดึก แสงสีเสียงจัดเต็ม พร้อมมุมถ่ายรูปสุดเก๋ที่ให้คุณอัปสตอรี่ได้รัวๆ แวะมาเช็คอินกันได้เลย!</p>
+            </div>
+
+            <!-- Image Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                <!-- Spot 1 -->
+                <div class="group relative rounded-2xl overflow-hidden shadow-md lg:col-span-2">
+                    <img src="C:/Users/Administrator/.gemini/antigravity/brain/cc2247db-0913-4615-9a2f-b4e53382ce3e/prem_hero_bg_1781936769809.png" alt="บรรยากาศร้าน" class="w-full h-80 object-cover transform group-hover:scale-105 transition duration-500" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                        <p class="text-white font-medium text-xl">✨ นั่งชิลรับลมเย็นๆ</p>
+                    </div>
+                </div>
+                <!-- Spot 2 -->
+                <div class="group relative rounded-2xl overflow-hidden shadow-md">
+                    <img src="C:/Users/Administrator/.gemini/antigravity/brain/cc2247db-0913-4615-9a2f-b4e53382ce3e/prem_atmosphere_1781936784382.png" alt="มุมถ่ายรูป" class="w-full h-80 object-cover transform group-hover:scale-105 transition duration-500" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                        <p class="text-white font-medium text-xl">📸 มุมนีออนดัดสุดคูล</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Menu Highlights -->
+    <section class="py-20 bg-brand-50 relative overflow-hidden">
+        <div class="absolute bottom-0 left-0 w-96 h-96 blob-bg opacity-30 transform -translate-x-1/2 translate-y-1/3"></div>
+
+        <div class="container mx-auto px-4 md:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <span class="bg-brand-100 text-brand-600 px-4 py-1 rounded-full text-sm font-semibold tracking-wide uppercase">Signature</span>
+                <h2 class="text-3xl md:text-5xl font-bold text-slate-900 mt-4 mb-4">เมนูเด็ด<span class="text-brand-500">ที่ต้องโดน</span></h2>
+                <p class="text-lg text-slate-600">สดชื่น หวานมันกำลังดี วัตถุดิบคัดสรรพิเศษเพื่อความฟินในทุกคำ</p>
+            </div>
+
+            <!-- Menu Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden transform hover:-translate-y-2 transition duration-300 border border-brand-100">
+                    <div class="h-64 overflow-hidden">
+                        <img src="C:/Users/Administrator/.gemini/antigravity/brain/cc2247db-0913-4615-9a2f-b4e53382ce3e/prem_menu_milk_1781936796066.png" alt="นมสดเย็น" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6 text-center">
+                        <div class="text-brand-500 mb-2">
+                            <svg class="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-800 mb-2">นมสดเย็น เปรมปรีดิ์</h3>
+                        <p class="text-slate-500">นมโคแท้ 100% หอม มัน กลมกล่อม ดื่มแล้วชื่นใจสุดๆ</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden transform hover:-translate-y-2 transition duration-300 border border-brand-100 md:-translate-y-4">
+                    <div class="h-64 overflow-hidden relative">
+                        <div class="absolute top-4 right-4 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full z-10">BEST SELLER</div>
+                        <img src="C:/Users/Administrator/.gemini/antigravity/brain/cc2247db-0913-4615-9a2f-b4e53382ce3e/prem_menu_toast_1781936807849.png" alt="ปังปิ้งสังขยา" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6 text-center">
+                        <div class="text-brand-500 mb-2">
+                            <svg class="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-800 mb-2">ปังปิ้ง สังขยาใบเตย</h3>
+                        <p class="text-slate-500">ขนมปังปิ้งเตาถ่านกรอบนอกนุ่มใน ราดสังขยาใบเตยเยิ้มๆ</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden transform hover:-translate-y-2 transition duration-300 border border-brand-100">
+                    <div class="h-64 overflow-hidden bg-slate-200 flex items-center justify-center">
+                        <!-- Since we only generated 2 menu images, I'll reuse the toast image but pretend it's a different menu or use a fallback styled box -->
+                        <img src="C:/Users/Administrator/.gemini/antigravity/brain/cc2247db-0913-4615-9a2f-b4e53382ce3e/prem_menu_toast_1781936807849.png" alt="ปังเย็นภูเขาไฟ" class="w-full h-full object-cover filter saturate-150 hue-rotate-15" />
+                    </div>
+                    <div class="p-6 text-center">
+                        <div class="text-brand-500 mb-2">
+                            <svg class="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-800 mb-2">ปังเย็นภูเขาไฟ</h3>
+                        <p class="text-slate-500">น้ำแข็งไสเย็นชื่นใจ ท็อปปิ้งแน่นพูนๆ คลายร้อนได้ดีเยี่ยม</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Footer & CTA -->
+    <footer id="delivery" class="bg-slate-900 text-white pt-20 pb-10 relative overflow-hidden">
+        <!-- Decorative elements -->
+        <div class="absolute top-0 right-0 w-full h-2 bg-gradient-to-r from-brand-400 via-brand-500 to-indigo-500"></div>
+        <div class="absolute -bottom-24 -left-24 w-64 h-64 bg-brand-600 rounded-full blur-3xl opacity-20"></div>
+        <div class="absolute top-10 right-10 w-40 h-40 bg-indigo-500 rounded-full blur-3xl opacity-20"></div>
+
+        <div class="container mx-auto px-4 md:px-8 relative z-10">
+            
+            <div class="max-w-4xl mx-auto bg-slate-800/80 backdrop-blur-md border border-slate-700 rounded-3xl p-8 md:p-12 text-center shadow-2xl mb-16 transform -translate-y-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">หิวแล้วใช่ไหม? <span class="text-brand-400">สั่งไปฟินที่บ้านได้เลย!</span></h2>
+                <p class="text-slate-300 mb-8 text-lg">ไม่ต้องเดินทาง ฝนตก รถติด ก็อร่อยกับเปรมนมสดได้ ส่งตรงถึงหน้าบ้านคุณ</p>
+                
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <!-- Grab Button -->
+                    <a href="#" class="flex items-center justify-center bg-white hover:bg-slate-100 text-green-600 font-bold py-4 px-8 rounded-full shadow-lg transition duration-300">
+                        <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9v-2h2v2zm0-4H9V7h2v5zm4 4h-2V7h2v9z"/></svg>
+                        สั่งผ่าน Grab
+                    </a>
+                    <!-- LINEMAN Button -->
+                    <a href="#" class="flex items-center justify-center bg-white hover:bg-slate-100 text-green-500 font-bold py-4 px-8 rounded-full shadow-lg transition duration-300">
+                        <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                        สั่งผ่าน LINEMAN
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 border-t border-slate-800 pt-10 text-center md:text-left">
+                
+                <div class="flex flex-col items-center md:items-start">
+                    <h3 class="text-2xl font-bold text-white mb-4">เปรมนมสด</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed max-w-xs">จุดแฮงก์เอาต์สุดชิคยามค่ำคืน เสิร์ฟความสุขผ่านความอร่อยของนมสดและของหวาน</p>
+                </div>
+
+                <div class="flex flex-col items-center md:items-start">
+                    <h4 class="text-lg font-semibold text-white mb-4">เวลาเปิด-ปิด</h4>
+                    <p class="text-slate-400 flex items-center mb-2">
+                        <svg class="w-5 h-5 mr-2 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        เปิดบริการทุกวัน
+                    </p>
+                    <p class="text-slate-300 font-medium text-xl">17:00 - 24:00 น.</p>
+                </div>
+
+                <div class="flex flex-col items-center md:items-start">
+                    <h4 class="text-lg font-semibold text-white mb-4">ติดตามเรา</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-brand-500 hover:text-white transition duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:bg-pink-500 hover:text-white transition duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="text-center mt-12 pt-8 border-t border-slate-800 text-slate-500 text-sm">
+                &copy; 2026 เปรมนมสด (Prem Nom Sod). All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
