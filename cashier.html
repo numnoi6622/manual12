@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cashier Dashboard - นมสดโฮ่งมาก</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cashier.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="cashier-header">
+        <div class="header-title">
+            <i class="fa-solid fa-cash-register"></i>
+            <h1>ระบบคิดเงิน (Cashier) - นมสดโฮ่งมาก</h1>
+        </div>
+        <a href="index.html" class="btn-logout">ออกจากระบบ</a>
+    </header>
+
+    <main class="cashier-container">
+        <!-- Tables List -->
+        <section class="tables-section">
+            <h2>โต๊ะที่รอชำระเงิน</h2>
+            <div class="tables-grid" id="tables-grid">
+                <!-- JS injected tables -->
+            </div>
+        </section>
+
+        <!-- Billing Detail (Right Panel) -->
+        <section class="billing-section" id="billing-section">
+            <div class="empty-bill-msg" id="empty-bill-msg">
+                <i class="fa-solid fa-receipt"></i>
+                <p>คลิกเลือกโต๊ะเพื่อดูรายละเอียดบิล</p>
+            </div>
+            
+            <div class="bill-detail" id="bill-detail" style="display: none;">
+                <div class="bill-header">
+                    <h2>บิลเรียกเก็บเงิน</h2>
+                    <span class="table-tag" id="bill-table-no">โต๊ะ --</span>
+                </div>
+                
+                <div class="bill-items" id="bill-items">
+                    <!-- JS injected items -->
+                </div>
+
+                <div class="bill-summary">
+                    <div class="summary-row">
+                        <span>ยอดรวมอาหารและเครื่องดื่ม</span>
+                        <span id="bill-subtotal">0 ฿</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>ยอดสุทธิ (Total)</span>
+                        <span id="bill-total">0 ฿</span>
+                    </div>
+                </div>
+
+                <div class="bill-actions">
+                    <button class="btn-pay" id="btn-pay" onclick="markAsPaid()">
+                        <i class="fa-solid fa-check"></i> ชำระเงินเรียบร้อย
+                    </button>
+                    <button class="btn-print" onclick="window.print()">
+                        <i class="fa-solid fa-print"></i> พิมพ์ใบเสร็จ
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="cashier.js"></script>
+</body>
+</html>
