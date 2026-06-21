@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สั่งอาหาร - นมสดโฮ่งมาก</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="order.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Sticky Header -->
+    <header class="order-header">
+        <div class="header-info">
+            <h1 class="shop-name">นมสดโฮ่งมาก</h1>
+            <span class="table-badge">โต๊ะ 01</span>
+        </div>
+        <div class="cart-icon-wrapper" id="cart-btn">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-count" id="cart-count">0</span>
+        </div>
+    </header>
+
+    <!-- Category Bar -->
+    <nav class="category-bar">
+        <button class="cat-btn active" data-category="all">ทั้งหมด</button>
+        <button class="cat-btn" data-category="drinks">เครื่องดื่ม</button>
+        <button class="cat-btn" data-category="sweets">ของหวาน</button>
+        <button class="cat-btn" data-category="fried">ของทอด</button>
+    </nav>
+
+    <!-- Product List -->
+    <main class="product-list" id="product-list">
+        <!-- Rendered by JS -->
+    </main>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal-overlay" id="cart-modal">
+        <div class="cart-modal-content">
+            <div class="cart-header">
+                <h2><i class="fa-solid fa-basket-shopping"></i> ตะกร้าสินค้าของคุณ</h2>
+                <button class="close-btn" id="close-cart"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="cart-items" id="cart-items">
+                <!-- Cart items rendered by JS -->
+                <div class="empty-cart-msg">ยังไม่มีรายการอาหารในตะกร้า</div>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>ยอดรวมทั้งหมด:</span>
+                    <span class="total-price" id="total-price">0 ฿</span>
+                </div>
+                <button class="confirm-order-btn" id="confirm-order-btn" disabled>ยืนยันสั่งอาหาร</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="order.js"></script>
+</body>
+</html>
