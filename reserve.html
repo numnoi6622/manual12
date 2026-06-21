@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>จองโต๊ะ - นมสดโฮ่งมาก</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reserve.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="reserve-header">
+        <a href="index.html" class="back-btn"><i class="fa-solid fa-chevron-left"></i> กลับหน้าร้าน</a>
+        <h1 class="shop-name">นมสดโฮ่งมาก</h1>
+    </header>
+
+    <main class="reserve-container">
+        <div class="reserve-card">
+            <div class="card-header">
+                <h2>จองโต๊ะล่วงหน้า</h2>
+                <p>กรุณากรอกข้อมูลให้ครบถ้วนเพื่อทำการจองโต๊ะ</p>
+            </div>
+            <form id="reserve-form">
+                <div class="form-group">
+                    <label for="name">ชื่อผู้จอง</label>
+                    <input type="text" id="name" name="name" placeholder="ระบุชื่อของคุณ" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">เบอร์โทรศัพท์ติดต่อ</label>
+                    <input type="tel" id="phone" name="phone" placeholder="08X-XXX-XXXX" pattern="[0-9]{10}" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group half">
+                        <label for="date">วันที่</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group half">
+                        <label for="time">เวลา (17:00 - 24:00)</label>
+                        <input type="time" id="time" name="time" min="17:00" max="23:59" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="guests">จำนวนลูกค้า (ท่าน)</label>
+                    <input type="number" id="guests" name="guests" min="1" max="20" value="2" required>
+                </div>
+
+                <button type="submit" class="submit-btn" id="submit-btn">ยืนยันการจอง</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Success Modal -->
+    <div class="success-modal-overlay" id="success-modal">
+        <div class="success-modal-content">
+            <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+            <h3>จองโต๊ะสำเร็จ!</h3>
+            <p>ระบบได้รับข้อมูลการจองของคุณเรียบร้อยแล้ว<br>เจอกันที่ร้าน "นมสดโฮ่งมาก" นะครับ 🥳</p>
+            <div class="summary-box">
+                <p><strong>ชื่อ:</strong> <span id="summary-name"></span></p>
+                <p><strong>วันที่:</strong> <span id="summary-date"></span></p>
+                <p><strong>เวลา:</strong> <span id="summary-time"></span> น.</p>
+                <p><strong>จำนวน:</strong> <span id="summary-guests"></span> ท่าน</p>
+            </div>
+            <button class="btn-home" onclick="window.location.href='index.html'">กลับสู่หน้าหลัก</button>
+        </div>
+    </div>
+
+    <script src="reserve.js"></script>
+</body>
+</html>
